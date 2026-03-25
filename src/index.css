@@ -1,0 +1,132 @@
+/* Estilos Globais */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #d4d4d4;
+  color: #ffffff;
+}
+
+h1 {
+  text-align: center;
+  color: #1a365d;
+  padding: 20px 0;
+}
+
+/* Container dos Cards */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Estilo do Card (Lasanha) */
+.car-card {
+  background: rgb(100, 99, 99);
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.car-card:hover {
+  transform: translateY(-5px);
+}
+
+.car-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.car-info {
+  padding: 15px;
+}
+
+.car-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0;
+
+}
+
+.car-price {
+  color: #01f54a;
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin: 10px 0;
+}
+
+.roi-badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.btn-view {
+  display: block;
+  text-align: center;
+  background: #2d3748;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 6px;
+  margin-top: 15px;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.search-bar {
+  width: 100%;
+  max-width: 400px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+}
+
+.btn-filter {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  background: #ebf8ff;
+  color: #2b6cb0;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-filter.active {
+  background: #2b6cb0;
+  color: white;
+}
+
+.btn-favorite {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(0,0,0,0.5);
+  border: none;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.btn-favorite:hover {
+  transform: scale(1.2);
+}
